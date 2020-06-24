@@ -1,0 +1,42 @@
+#header {
+
+  text-align: center;
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+
+.title {
+  align-self: center;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+
+.form-control {
+
+  width: 120%;
+  margin-bottom: 1.5%;
+
+}
+
+#btn {
+
+  width: 120%;
+
+
+}
+
+#btn2 {
+
+  width: 100%;
+
+
+}
+
+#status{
+  margin-top: 30px;
+  border: blue 1px solid;
+  height: 80px;
+  text-align: center;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+  <meta charset="UTF-8">
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>  
+<script src="source.js"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">  
+<link rel="stylesheet" href="./style.css">
+
+
+<title>AFD</title>
+
+</head>
+<body>
+  <div id="header" class="alert alert-primary" role="alert">
+    Autômato Finito Determinístico
+  </div>
+  <form action="string.html">
+
+    <label for="alphabet" class="title">Insira o alfabeto a ser utilizado:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" value="" id="alphabet">
+    </div>
+
+    <label for="states" class="title">
+      Insira os estados com suas respectivas regras de transição 
+      ex:(s/a1,s1;a2;s2 s1/a1;s2;a2;s3), onde {s, s1} são os estados e as representações após a 
+      "/" são as funções de transição, onde as funções de transição devem sem separadas por ";" 
+      e o conjunto de informações do estado (estado e regras de transição) devem ser separados por um espaço :
+    </label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="states">
+    </div>
+
+    <label for="initialState" class="title">Insira o estado inicial:</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="initialState">
+    </div>
+
+    <label for="finalStates" class="title">Insira o(s) estado(s) inicial(is):</label>
+    <div class="col-sm-10">
+      <input type="text" class="form-control" id="finalStates">
+
+      <button onclick="send()" class="btn btn-primary" id="btn">Submit</button>
+    </div>
+
+
+  </form>
+</body>
+</html>
